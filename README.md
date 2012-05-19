@@ -1,4 +1,4 @@
-game_dont_touch
+"Don't touch" game
 ===============
 
-Simple game made for test of love2d game engine
+Simple game made for test of love2d game engine.
