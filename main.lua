@@ -35,7 +35,8 @@ function love.load()
     texts.game_caption = "DON'T TOUCH"
     texts.start_help = {"SPACE to start", 
                         "ESC   to exit",
-                        "P     to pause" }
+                        "P     to pause",
+                        "UP ARROW to push ball"  }
 
     love.mouse.setVisible(false)                        
     love.physics.setMeter(64)
@@ -91,7 +92,7 @@ function love.update(dt)
                 keypress_num = 1
             end        
         end
-        if score > next_lvl_score and zones.bottom > 5 and zones.top > 5 then
+        if score > next_lvl_score and zones.bottom > 10 and zones.top > 10 then
             next_lvl_score = next_lvl_score + NEXT_LVL_SCORE_INC
             zones.bottom = zones.bottom - 5
             zones.top = zones.top - 5
